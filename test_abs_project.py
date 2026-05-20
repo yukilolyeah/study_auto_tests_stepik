@@ -46,6 +46,7 @@ class TestRegistration(unittest.TestCase):
         self.assertEqual("Congratulations! You have successfully registered!", welcome_text, "Welcome text is not correct")
         browser.quit()
 
+    # этот тест должен упасть с ошибкой
     def test_registration_2(self):
         link = "http://suninjuly.github.io/registration2.html"
         browser = webdriver.Chrome()
